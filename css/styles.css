@@ -10971,3 +10971,10 @@ section.resume-section .resume-section-content {
   }
 }
 
+.project a:last-child {
+  margin-bottom: 20px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.project:last-of-type {
+  margin-bottom: 10px; /* Réduit l'espace après le dernier projet */
+}
