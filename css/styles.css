@@ -10971,18 +10971,4 @@ section.resume-section .resume-section-content {
   }
 }
 
-.project {
-  margin-bottom: 40px; /* Espacement entre les projets */
-  padding-bottom: 20px; /* Espace supplémentaire au bas de chaque projet */
-}
-
-.project a {
-  display: inline; /* Affiche les liens en ligne pour qu'ils restent sur la même ligne */
-  margin-right: 10px; /* Espacement entre les liens */
-}
-
-.project:last-child {
-  margin-bottom: 0; /* Pas d'espacement au bas du dernier projet */
-}
-
 
