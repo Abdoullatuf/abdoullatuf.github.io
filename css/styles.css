@@ -10971,4 +10971,7 @@ section.resume-section .resume-section-content {
   }
 }
 
+.project:first-child {
+  padding-bottom: 40px; /* Augmente l'espace en dessous du premier projet uniquement */
+}
 
