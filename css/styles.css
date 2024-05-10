@@ -10972,19 +10972,17 @@ section.resume-section .resume-section-content {
 }
 
 .project {
-  margin-bottom: 40px; /* Ajoute de l'espace en dessous de chaque projet pour bien les séparer */
-  padding-bottom: 20px; /* Ajoute un padding en bas de chaque projet pour séparer les liens du texte du projet suivant */
-  border-bottom: 1px solid #ccc; /* Optionnel: Ajoute une ligne de séparation si désiré */
+  margin-bottom: 40px; /* Espacement entre les projets */
+  padding-bottom: 20px; /* Espace supplémentaire au bas de chaque projet */
 }
 
 .project a {
-  display: block; /* Affiche chaque lien sur sa propre ligne */
-  margin-bottom: 10px; /* Ajoute de l'espace en dessous de chaque lien */
+  display: inline; /* Affiche les liens en ligne pour qu'ils restent sur la même ligne */
+  margin-right: 10px; /* Espacement entre les liens */
 }
 
-.project:last-of-type {
-  margin-bottom: 0; /* Pas de marge au bas du dernier projet */
-  padding-bottom: 0; /* Pas de padding au bas du dernier projet */
-  border-bottom: none; /* Pas de bordure au bas du dernier projet */
+.project:last-child {
+  margin-bottom: 0; /* Pas d'espacement au bas du dernier projet */
 }
+
 
