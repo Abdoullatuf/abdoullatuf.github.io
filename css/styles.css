@@ -10970,3 +10970,11 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+.project {
+  margin-bottom: 40px; /* Ajoute de l'espace en dessous de chaque projet */
+}
+.project a {
+  display: block; /* Affiche chaque lien sur sa propre ligne */
+  margin-bottom: 10px; /* Ajoute de l'espace en dessous de chaque lien */
+}
