@@ -10978,3 +10978,8 @@ section.resume-section .resume-section-content {
 .project:last-of-type {
   margin-bottom: 10px; /* Réduit l'espace après le dernier projet */
 }
+
+
+.small-icon {
+  font-size: 12px; /* Ajustez cette valeur pour définir la taille souhaitée */
+}
