@@ -596,7 +596,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {
@@ -3374,7 +3374,7 @@ textarea.form-control-lg {
   border-top: 0;
   border-right: 0.3em solid transparent;
   border-bottom: 0.3em solid;
-  border-left: 0.3em solid transparent;
+  border-left: 0.3em solid;
 }
 .dropup .dropdown-toggle:empty::after {
   margin-left: 0;
@@ -10982,4 +10982,109 @@ section.resume-section .resume-section-content {
 
 .small-icon {
   font-size: 12px; /* Ajustez cette valeur pour définir la taille souhaitée */
+}
+
+/* Animations et interactivité */
+.certification-card, .project-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certification-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.badge {
+    transition: transform 0.2s ease-in-out;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+}
+
+.project-links a {
+    transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation pour les sections */
+.resume-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.resume-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Style des cartes de certification */
+.certification-card {
+    background: linear-gradient(145deg, #ffffff, #f5f5f5);
+    border-radius: 15px;
+}
+
+.certification-card .card-body {
+    padding: 1.5rem;
+}
+
+/* Style des cartes de projet */
+.project-card {
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.project-card .card-body {
+    padding: 2rem;
+}
+
+.project-badges {
+    margin: 1rem 0;
+}
+
+/* Animation du menu de navigation */
+.navbar-nav .nav-item {
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-item:hover {
+    transform: translateX(5px);
+}
+
+/* Animation des icônes sociales */
+.social-icons a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    color: #bd5d38;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .certification-card, .project-card {
+        margin-bottom: 1rem;
+    }
+    
+    .project-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .project-links a {
+        width: 100%;
+        text-align: center;
+    }
 }
