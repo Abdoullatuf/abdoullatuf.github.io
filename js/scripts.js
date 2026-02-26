@@ -60,10 +60,11 @@ document.addEventListener('DOMContentLoaded', function() {
 // Animation du menu de navigation
 document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
     link.addEventListener('click', function(e) {
-        e.preventDefault();
         const targetId = this.getAttribute('href');
+        if (!targetId || !targetId.startsWith('#')) return;
+        e.preventDefault();
         const targetSection = document.querySelector(targetId);
-        
+
         if (targetSection) {
             targetSection.scrollIntoView({
                 behavior: 'smooth'
